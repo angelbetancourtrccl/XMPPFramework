@@ -70,6 +70,11 @@
 		8D28EEB8219391B200DED6B6 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28EEB3219391B200DED6B6 /* CocoaAsyncSocket.framework */; };
 		8D28EEB9219391B200DED6B6 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28EEB4219391B200DED6B6 /* KissXML.framework */; };
 		8D28EEBA219391B200DED6B6 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28EEB5219391B200DED6B6 /* CocoaLumberjack.framework */; };
+		8DEA3EE72193956800EE1501 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28EEB3219391B200DED6B6 /* CocoaAsyncSocket.framework */; };
+		8DEA3EE82193956800EE1501 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28EEB5219391B200DED6B6 /* CocoaLumberjack.framework */; };
+		8DEA3EE92193956800EE1501 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28EEB2219391B200DED6B6 /* CocoaLumberjackSwift.framework */; };
+		8DEA3EEA2193956800EE1501 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28EEB4219391B200DED6B6 /* KissXML.framework */; };
+		8DEA3EEB2193956800EE1501 /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D28EEB1219391B200DED6B6 /* libidn.framework */; };
 		D91D42431FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
 		D91D42441FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
 		D91D42451FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
@@ -1421,6 +1426,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DEA3EE72193956800EE1501 /* CocoaAsyncSocket.framework in Frameworks */,
+				8DEA3EE82193956800EE1501 /* CocoaLumberjack.framework in Frameworks */,
+				8DEA3EE92193956800EE1501 /* CocoaLumberjackSwift.framework in Frameworks */,
+				8DEA3EEA2193956800EE1501 /* KissXML.framework in Frameworks */,
+				8DEA3EEB2193956800EE1501 /* libidn.framework in Frameworks */,
 				D9A7AFB61FB97B20005183CD /* XMPPFramework.framework in Frameworks */,
 				D9A7A9B91FB97892005183CD /* libresolv.tbd in Frameworks */,
 				D9A7A9BA1FB97892005183CD /* libxml2.tbd in Frameworks */,
@@ -4020,7 +4030,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Swift/XMPPFrameworkSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -4046,7 +4059,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Swift/XMPPFrameworkSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
